@@ -4,9 +4,9 @@ A modern news application built with React Native (using Expo) and Node.js that 
 
 <table>
   <tr>
-    <td><img src="screenshots/img1.png" width="200" alt="Home Screen"/></td>
-    <td><img src="screenshots/img2.png" width="200" alt="Details Screen"/></td>
-    <td><img src="screenshots/img3.png" width="200" alt="Listener Module"/></td>
+    <td><img src="screenshots/img-1.png" width="200" alt="Home Screen"/></td>
+    <td><img src="screenshots/img-2.png" width="200" alt="Details Screen"/></td>
+    <td><img src="screenshots/img-3.png" width="200" alt="Listener Module"/></td>
   </tr>
 </table>
 
