@@ -36,3 +36,4 @@ yarn-error.*
 *.tsbuildinfo
 
 app-example
+app/components/api/url.ts
