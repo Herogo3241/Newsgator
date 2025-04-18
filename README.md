@@ -2,7 +2,13 @@
 
 A modern news application built with React Native (using Expo) and Node.js that allows users to browse, read, and get AI-powered summaries of news articles from The Guardian.
 
-| ![Home Screen](screenshots/img1.png) | ![Details Screen](screenshots/img2.png) | ![Listener Module](screenshots/img3.png) |
+<table>
+  <tr>
+    <td><img src="screenshots/img1.png" width="200" alt="Home Screen"/></td>
+    <td><img src="screenshots/img2.png" width="200" alt="Details Screen"/></td>
+    <td><img src="screenshots/img3.png" width="200" alt="Listener Module"/></td>
+  </tr>
+</table>
 
 ## Features
 
