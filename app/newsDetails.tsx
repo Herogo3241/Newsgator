@@ -23,7 +23,7 @@ import BottomSheet, {
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import AnimatedScrollingText from "./components/ui/animatedscrolltext";
 import Slider from "@react-native-community/slider";
-import { GET_URL } from "./components/api/url";
+import apiConfig from "./components/api/url";
 import { LinearGradient } from "expo-linear-gradient";
 
 // Define the Article type for better type safety
@@ -158,7 +158,7 @@ export default function NewsDetails() {
       try {
         setIsLoading(true);
         const scrapeRes = await fetch(
-          `${GET_URL}/scrape?url=${encodeURIComponent(item.webUrl)}`
+          `${apiConfig.GET_URL}/scrape?url=${encodeURIComponent(item.webUrl)}`
         );
 
         if (!scrapeRes.ok) {
@@ -204,7 +204,7 @@ export default function NewsDetails() {
     try {
       if (!summary) {
         const summarizeRes = await fetch(
-          `${GET_URL}/api/summarize?url=${encodeURIComponent(item.webUrl)}`
+          `${apiConfig.GET_URL}/api/summarize?url=${encodeURIComponent(item.webUrl)}`
         );
 
         if (!summarizeRes.ok) {
@@ -589,7 +589,7 @@ const styles = StyleSheet.create({
   modalContentContainer: {
     flex: 1,
     padding: 24,
-    paddingTop: 16,
+    paddingTop: 12,
     alignItems: "center"
   },
   modalTitle: {
@@ -604,7 +604,7 @@ const styles = StyleSheet.create({
     height: 200,
     borderRadius: 12,
     backgroundColor: "#f0f0f0",
-    marginBottom: 16
+    marginBottom: 12
   },
   summaryTitle: {
     fontSize: 22,

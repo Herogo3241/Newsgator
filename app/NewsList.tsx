@@ -10,9 +10,9 @@ import {
   Animated,
   Easing,
   RefreshControl,
-  ScrollView,
 } from "react-native";
-import { API_KEY } from "./components/api/url";
+import apiConfig from "./components/api/url";
+
 
 type Article = {
   id: string;
@@ -118,7 +118,7 @@ export default function NewsList({navigation} : any) {
       const today = new Date().toISOString().split('T')[0];
       
       // Build the API URL based on category
-      let apiUrl = `https://content.guardianapis.com/search?api-key=${API_KEY}&show-fields=thumbnail,headline,byline&order-by=relevance&from-date=${today}&page-size=10`;
+      let apiUrl = `https://content.guardianapis.com/search?api-key=${apiConfig.API_KEY}&show-fields=thumbnail,headline,byline&order-by=relevance&from-date=${today}&page-size=10`;
       
       // Add section filter if not "all"
       if (category !== "all") {
