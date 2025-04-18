@@ -12,6 +12,7 @@ import {
   RefreshControl,
   ScrollView,
 } from "react-native";
+import { API_KEY } from "./components/api/url";
 
 type Article = {
   id: string;
@@ -99,8 +100,8 @@ const SkeletonItem = () => {
 };
 
 export default function NewsList({navigation} : any) {
-  // API key for The Guardian
-  const API_KEY = "9dd95288-8df6-4972-9db6-609c16bdaa7b";
+
+  
   
   const [articles, setArticles] = useState<Article[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
